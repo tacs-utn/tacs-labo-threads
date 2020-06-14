@@ -14,6 +14,8 @@ public class RuntimeExceptionMapper implements ExceptionMapper<RuntimeException>
     public Response toResponse(RuntimeException ex) {
         LOGGER.warning(ex.getMessage());
 
+        ex.printStackTrace();
+
         return Response.status(Response.Status.BAD_REQUEST)
                 .entity(ex.getMessage())
                 .type("text/plain")

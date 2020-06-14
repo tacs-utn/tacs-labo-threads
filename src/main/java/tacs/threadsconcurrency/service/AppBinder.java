@@ -1,6 +1,5 @@
 package tacs.threadsconcurrency.service;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 import javax.inject.Singleton;
